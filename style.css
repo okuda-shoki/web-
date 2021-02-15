@@ -1,0 +1,610 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.all {
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#eyecatch {
+  height: 600px;
+  background: url(../img/img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#eyecatch p {
+  position: relative;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 500;
+  color: #ccc;
+  line-height: 1;
+}
+
+.text {
+  position: relative;
+}
+.text0 {
+  position: absolute;
+  left: 700px;
+  bottom: 0px;
+  height: 53px;
+  width: 750px;
+  background-color: white;
+  background-size: cover;
+}
+
+.text0 h6 {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+.text0 p {
+  font-style: normal;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+}
+
+.text1 {
+  position: relative;
+}
+
+.text00 {
+  position: absolute;
+  bottom: 0px;
+  left: 1450px;
+  background-color: black;
+  height: 53px;
+  width: 250px;
+}
+
+.text00 h3 {
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+  padding-top: 22px;
+  text-align: center;
+}
+
+#about {
+  background-color: black;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-center {
+  line-height: 24px;
+}
+
+.about-center h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 170px;
+  right: 350px;
+}
+
+.about-center p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  position: relative;
+  top: 200px;
+  right: 350px;
+}
+.about-center button {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative;
+  top: 220px;
+  right: 350px;
+}
+
+.about-right img {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 30%;
+}
+
+#service {
+  margin-top: 120px;
+  background: rgba(241, 241, 241, 0.733);
+  height: 1800px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.section-left {
+  width: 700px;
+  height: 350px;
+  background-color: white;
+  position: relative;
+  left: 300px;
+  bottom: 450px;
+  padding-right: 60px;
+}
+
+.section-left h3 {
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 70px;
+}
+
+.section-left p {
+  padding-top: 20px;
+  padding-left: 70px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.section-left button {
+  background-color: white;
+  color: black;
+  font-style: normal;
+  padding: 10px 30px;
+  position: relative;
+  top: 30px;
+  left: 550px;
+}
+
+.section-right img {
+  height: 600px;
+  width: 850px;
+  position: relative;
+  left: 830px;
+}
+
+.service-right {
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  padding-top: 50px;
+  padding-right: 80px;
+  position: relative;
+  bottom: 480px;
+  left: 650px;
+}
+
+.service-right h3 {
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 70px;
+}
+
+.service-right p {
+  padding-top: 20px;
+  padding-left: 70px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.service-right button {
+  background-color: white;
+  color: black;
+  font-style: normal;
+  padding: 10px 30px;
+  position: relative;
+  top: 30px;
+  left: 550px;
+}
+
+.service-left img {
+  height: 600px;
+  width: 850px;
+}
+
+#works {
+  background-color: white;
+  height: 600px;
+}
+
+.works-wrap {
+  position: absolute;
+  background-size: cover;
+}
+
+.works-wrap h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 320px;
+}
+
+.works-wrap p {
+  font-size: 15px;
+  position: absolute;
+  top: 120px;
+  left: 360px;
+  color: white;
+}
+
+.works-wrap img {
+  height: 200px;
+  width: 800px;
+}
+
+.recruit-wrap {
+  position: relative;
+  left: 900px;
+  margin-top: 100px;
+  background-size: cover;
+}
+.recruit-wrap h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 320px;
+}
+
+.recruit-wrap p {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 120px;
+  left: 340px;
+}
+
+.recruit-wrap img {
+  height: 200px;
+  width: 800px;
+}
+
+.question-wrap {
+  position: relative;
+  top: 120px;
+  left: 180px;
+  background-color: black;
+  height: 80px;
+  width: 1300px;
+}
+
+.question-wrap h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  position: absolute;
+  top: 0px;
+  padding: 25px;
+}
+
+.question-wrap p {
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 610px;
+  padding-top: 30px;
+}
+
+#contact {
+  background: url(../img/img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  position: relative;
+}
+
+.contact-wrap h3 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 280px;
+  left: 750px;
+}
+.contact-wrap p {
+  font: 15px;
+  color: white;
+  position: absolute;
+  top: 340px;
+  left: 780px;
+}
+
+.contact-title p {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 380px;
+  left: 550px;
+}
+
+.contact-logo p {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 460px;
+  left: 300px;
+}
+
+.contact-logo button {
+  border-color: white;
+  position: absolute;
+  top: 530px;
+  left: 760px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+}
+
+#footer {
+  height: 90px;
+  background: #000;
+  vertical-align: bottom;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2f2f2;
+  position: relative;
+  right: 260px;
+}
+
+.footer-nav ul {
+  display: flex;
+  position: relative;
+  left: 270px;
+  padding-top: 20px;
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav small {
+  height: 80px;
+  text-align: center;
+  color: white;
+  position: relative;
+  right: 260px;
+  top: 20px;
+}
